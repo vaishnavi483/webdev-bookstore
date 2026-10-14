@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register | GL Bajaj Bookstore</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html"><img src="glb-logo.jpeg" alt="GL Bajaj logo"><span><h1>ONLINE BOOKSTORE</h1><small>Create an account</small></span></a>
+    <nav class="nav"><a href="index.html">Home</a><a href="catalogue.html">Catalogue</a><a href="login.html">Login</a><a class="active" href="registration.html">Register</a><a href="cart.html">Cart <span class="cart-badge" data-cart-count>0</span></a></nav>
+  </header>
+  <main class="page">
+    <section class="auth-card">
+      <h2>Registration Form</h2>
+      <p class="muted">Create an account to manage your bookstore orders.</p>
+      <p id="registration-message" class="notice" hidden></p>
+      <form id="registration-form" class="form-grid">
+        <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" required autocomplete="name"></div>
+        <div class="field"><label for="password">Password</label><input id="password" name="password" type="password" minlength="6" required autocomplete="new-password"></div>
+        <div class="field"><label for="email">E-mail ID</label><input id="email" name="email" type="email" inputmode="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Enter a valid email address such as you@example.com" placeholder="you@example.com" required autocomplete="email"></div>
+        <div class="field"><label for="phone">Phone Number</label><input id="phone" name="phone" type="tel" inputmode="tel" pattern="[0-9+() -]{7,}" placeholder="+91 9876543210" required autocomplete="tel"></div>
+        <div class="field"><span>Sex</span><div style="display:flex;align-items:center;gap:18px"><label for="male">Male</label><input id="male" type="radio" name="sex" value="Male" required><label for="female">Female</label><input id="female" type="radio" name="sex" value="Female"></div></div>
+        <div class="field"><label>Date of Birth</label><div style="display:flex;gap:8px;flex-wrap:wrap"><select name="day" required><option value="">Day</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option><option>21</option><option>22</option><option>23</option><option>24</option><option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option><option>31</option></select><select name="month" required><option value="">Month</option><option>January</option><option>February</option><option>March</option><option>April</option><option>May</option><option>June</option><option>July</option><option>August</option><option>September</option><option>October</option><option>November</option><option>December</option></select><select name="year" required><option value="">Year</option><option>2000</option><option>2001</option><option>2002</option><option>2003</option><option>2004</option><option>2005</option><option>2006</option><option>2007</option></select></div></div>
+        <div class="field"><span>Languages Known</span><div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap"><label for="english">English</label><input id="english" type="checkbox" name="languages" value="English"><label for="telugu">Telugu</label><input id="telugu" type="checkbox" name="languages" value="Telugu"><label for="hindi">Hindi</label><input id="hindi" type="checkbox" name="languages" value="Hindi"><label for="tamil">Tamil</label><input id="tamil" type="checkbox" name="languages" value="Tamil"></div></div>
+        <div class="field"><label for="address">Address</label><textarea id="address" name="address" rows="4" required></textarea></div>
+        <button class="button" type="submit">Register</button>
+      </form>
+      <p class="muted">Already registered? <a href="login.html">Log in</a></p>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
