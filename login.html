@@ -1,1 +1,49 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Login | GL Bajaj Bookstore</title><link rel="stylesheet" href="app.css"></head><body><header class="topbar"><a class="brand" href="index.html"><img src="G.L. Bajaj Logo.jpeg" alt="GL Bajaj logo"><span><h1>ONLINE BOOKSTORE</h1><small>Account access</small></span></a><nav class="nav"><a href="index.html">Home</a><a href="catalogue.html">Catalogue</a><a class="active" href="login.html">Login</a><a href="registration.html">Register</a><a href="cart.html">Cart <span class="cart-badge" data-cart-count>0</span></a></nav></header><main class="page"><section class="auth-card"><h2>Welcome back</h2><p class="muted">Log in to manage your cart and place an order.</p><p id="login-message" class="notice" hidden></p><form id="login-form" class="form-grid"><div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" required autocomplete="email"></div><div class="field"><label for="password">Password</label><input id="password" name="password" type="password" required autocomplete="current-password"></div><button class="button" type="submit">Log in</button></form><p class="muted">New here? <a href="registration.html">Create an account</a></p></section></main><script src="app.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | GL Bajaj Bookstore</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">
+      <img src="G.L. Bajaj Logo.jpeg" alt="GL Bajaj logo">
+      <span>
+        <h1>ONLINE BOOKSTORE</h1>
+        <small>Account access</small>
+      </span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="catalogue.html">Catalogue</a>
+      <a class="active" href="login.html">Login</a>
+      <a href="registration.html">Register</a>
+      <a href="cart.html">Cart <span class="cart-badge" data-cart-count>0</span></a>
+    </nav>
+  </header>
+  
+  <main class="page">
+    <section class="auth-card">
+      <h2>Welcome back</h2>
+      <p class="muted">Log in to manage your cart and place an order.</p>
+      <p id="login-message" class="notice" hidden></p>
+      <form id="login-form" class="form-grid">
+        <div class="field">
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" required autocomplete="email">
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" required autocomplete="current-password">
+        </div>
+        <button class="button" type="submit">Log in</button>
+      </form>
+      <p class="muted">New here? <a href="registration.html">Create an account</a></p>
+    </section>
+  </main>
+  
+  <script src="app.js"></script>
+</body>
+</html>
